@@ -463,10 +463,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preloadAreas:
-  - {fileID: 3531498079407963980, guid: 160c97d6b4e494695a594ac30f24a488, type: 3}
-  - {fileID: 3531498079407963980, guid: c28fe5902e2c0458e966d2ff05599f9b, type: 3}
-  - {fileID: 3531498079407963980, guid: 9f2e8a4a2fb5248a8b8f8353f2523415, type: 3}
-  - {fileID: 3531498079407963980, guid: 0248558082d274bd8984c46e7eb0ef8c, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
 --- !u!4 &1102906998
 Transform:
   m_ObjectHideFlags: 0
@@ -518,39 +518,39 @@ MonoBehaviour:
   next: {fileID: 0}
   areaIndex: -1
   areas:
-  - tag: test
+  - tag: street
     duration: 0
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 24
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 12
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 12
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 30
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 26
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 13
     playerSpeed: 0
     obj: {fileID: 0}
