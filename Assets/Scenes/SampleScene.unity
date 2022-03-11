@@ -238,7 +238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -998,29 +998,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156252235}
     m_Modifications:
-    - target: {fileID: 417526477, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1827609683337857803, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: speed
-      value: 24
+    - target: {fileID: 417526480, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_Name
       value: PlayerContainer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792338889261734706, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_Antialiasing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792338889261734706, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849337341924193230, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7999206570070582808, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_RootOrder
@@ -1066,8 +1050,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 123549406, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
 --- !u!4 &4849337342034747072 stripped
 Transform:
