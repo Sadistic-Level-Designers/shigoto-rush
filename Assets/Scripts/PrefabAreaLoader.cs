@@ -82,6 +82,11 @@ public class PrefabAreaLoader : MonoBehaviour
             nextDesc.obj = next.gameObject;
 
             // Debug.Log("Loaded area: " + );
+        } else {
+            // stop everything if there's no more areas to load
+            player.speed = 0;
+            this.enabled = false;
+            Debug.Log("Level terminated");
         }
     }
 }
