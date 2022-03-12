@@ -238,7 +238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -463,10 +463,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preloadAreas:
-  - {fileID: 3531498079407963980, guid: 160c97d6b4e494695a594ac30f24a488, type: 3}
-  - {fileID: 3531498079407963980, guid: c28fe5902e2c0458e966d2ff05599f9b, type: 3}
-  - {fileID: 3531498079407963980, guid: 9f2e8a4a2fb5248a8b8f8353f2523415, type: 3}
-  - {fileID: 3531498079407963980, guid: 0248558082d274bd8984c46e7eb0ef8c, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
 --- !u!4 &1102906998
 Transform:
   m_ObjectHideFlags: 0
@@ -518,39 +518,39 @@ MonoBehaviour:
   next: {fileID: 0}
   areaIndex: -1
   areas:
-  - tag: test
+  - tag: street
     duration: 0
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 24
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 12
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 12
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 30
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 26
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: street
     duration: 13
     playerSpeed: 0
     obj: {fileID: 0}
@@ -998,29 +998,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156252235}
     m_Modifications:
-    - target: {fileID: 417526477, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1827609683337857803, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: speed
-      value: 24
+    - target: {fileID: 417526480, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_Name
       value: PlayerContainer
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792338889261734706, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_Antialiasing
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4792338889261734706, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_RenderPostProcessing
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849337341924193230, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7999206570070582808, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_RootOrder
@@ -1066,8 +1050,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 123549406, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
 --- !u!4 &4849337342034747072 stripped
 Transform:
