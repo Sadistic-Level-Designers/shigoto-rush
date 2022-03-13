@@ -11,6 +11,7 @@ public enum CharacterState
 
 public class PlayerControl : MonoBehaviour
 {
+    private Animator DashAnim;
     public float LaneDistance = 5.0f;
 
     private CharacterController controller;
@@ -26,6 +27,7 @@ public class PlayerControl : MonoBehaviour
         controller = GetComponent<CharacterController>();
 
         state = CharacterState.Run;
+        DashAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -56,7 +58,20 @@ public class PlayerControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.UpArrow) && state == CharacterState.Run) {
             //Debug.Log("Lunge activated");
             StartCoroutine(DoLunge());
-        
+
+        switch (state)
+        {
+            case CharacterState.Run:
+            DashAnim.SetTrigger("DashTR");
+            break;
+        }
+        switch (state)
+        {
+            case CharacterState.Lunge:
+            DashAnim.SetTrigger("DashTR");
+            break;
+        }
+
         }
             
             

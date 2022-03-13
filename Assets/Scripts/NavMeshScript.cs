@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class NPCmovement : MonoBehaviour
+public class NavMeshScript : MonoBehaviour
 {
     [SerializeField] private Transform movePositionTransform;
     private NavMeshAgent navMeshAgent;
