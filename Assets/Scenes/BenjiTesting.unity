@@ -157,7 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
-  audioClip: []
+  audioClip:
+  - Man_Uuh!
+  - Man_Help!
+  - Man_Stop!
   animator: {fileID: 0}
 --- !u!65 &201470280
 BoxCollider:
@@ -237,6 +240,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &637919455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8309852467105353669, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_Name
+      value: (Ragdoll)Schoolkid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
 --- !u!1 &701073111
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +331,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
-  audioClip: []
+  audioClip:
+  - Child_Uuh!
+  - Child_Aah!
+  - Child_Crazy!
   animator: {fileID: 0}
 --- !u!65 &701073113
 BoxCollider:
@@ -500,7 +563,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
-  audioClip: []
+  audioClip:
+  - OldWoman_Uuh!
+  - OldWoman_Stop!
+  - OldWoman_Madman!
   animator: {fileID: 0}
 --- !u!65 &965007521
 BoxCollider:
@@ -847,6 +913,63 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1426855492773360666
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1461291634077995088, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237264626998332138, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
+      propertyPath: m_Name
+      value: Schoolkid2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f5cc6a0e8c562407a86424768cf5ea16, type: 3}
 --- !u!1001 &4849337342034747071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -967,3 +1090,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0504a38dc40a4ea2a05c630bc364bd1, type: 3}
+--- !u!1001 &9192954164382960455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8309852467105353669, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_Name
+      value: Schoolkid
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.041
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654043155307926911, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
