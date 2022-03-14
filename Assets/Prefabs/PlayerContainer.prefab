@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 4217617348888644202}
   - component: {fileID: 7651054467661762666}
   - component: {fileID: 2493074066821698290}
+  - component: {fileID: 1074365376}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -180,6 +181,23 @@ MonoBehaviour:
   speed: 8
   chosenLane: 1
   state: 0
+--- !u!114 &1074365376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373554506178960148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87821f9def77543ee90e4cf17baf67a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  currentHealth: 0
+  damage: 0.2
+  regeneration: 0.05
+  screenVolume: {fileID: 4849337342034747074}
 --- !u!1 &2980220718335974679
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +209,7 @@ GameObject:
   - component: {fileID: 7999206570070582808}
   - component: {fileID: 1827609683337857803}
   - component: {fileID: 4849337342034747074}
+  - component: {fileID: 3855674124803578790}
   m_Layer: 0
   m_Name: PlayerContainer
   m_TagString: Untagged
@@ -246,6 +265,21 @@ MonoBehaviour:
   blendDistance: 0
   weight: 0
   sharedProfile: {fileID: 11400000, guid: 41787501605394370844f696000069fe, type: 2}
+--- !u!114 &3855674124803578790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980220718335974679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa378c98b844454da21d6706765cd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dodgeScore: 0
+  lungeScore: 0
+  scoreAmount: 1
 --- !u!1 &4849337341924193230
 GameObject:
   m_ObjectHideFlags: 0

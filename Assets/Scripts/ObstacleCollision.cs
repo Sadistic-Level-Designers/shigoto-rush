@@ -71,7 +71,8 @@ public class ObstacleCollision : MonoBehaviour
         {
             case ObjectType.Human:
                 if(playerState == CharacterState.Lunge) {
-                    // TODO: increment attack score
+                    lungedHuman = true;
+
                     ToggleRagdoll(true);
                     foreach(Rigidbody rb in ragdollBodies) {
                         rb.AddForce((new Vector3(transform.localPosition.x / 4f, 0.5f, 1f)) * ragdollForce / ragdollBodies.Length);
@@ -107,7 +108,7 @@ public class ObstacleCollision : MonoBehaviour
         }
 
         if(lungedHuman){
-
+            PlayerContainer.GetComponent<ScoreCounter>().ChangeLungeScore();
         }
     }
 }
