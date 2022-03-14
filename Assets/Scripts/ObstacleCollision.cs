@@ -28,7 +28,7 @@ public class ObstacleCollision : MonoBehaviour
     {
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
-
+        animator = GetComponent<Animator>();
         ToggleRagdoll(false);
     }
     
@@ -43,7 +43,8 @@ public class ObstacleCollision : MonoBehaviour
 
         foreach(Collider collider in ragdollColliders)
         {
-            collider.enabled = state;
+            if(collider.gameObject != this.gameObject)
+                collider.enabled = state;
         }
     }
   
@@ -64,7 +65,7 @@ public class ObstacleCollision : MonoBehaviour
         if(audioClip != null && audioClip.Length > 0)
             SoundManager.i.PlayOnce(audioClip[Random.Range(0, audioClip.Length)]);
 
-    
+
         //Decides what will happen depending on the object type
         switch (type)
         {

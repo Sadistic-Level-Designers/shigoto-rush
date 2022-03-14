@@ -175,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e85eb00c97147969fe86fb772e51b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DashAnim: {fileID: 864330610}
   LaneDistance: 5
   speed: 8
   chosenLane: 1
@@ -517,3 +518,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: baa26b145e25aad47a8575d9259a75c3, type: 3}
   m_PrefabInstance: {fileID: 3966195441525880079}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4308722652029208670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: baa26b145e25aad47a8575d9259a75c3, type: 3}
+  m_PrefabInstance: {fileID: 3966195441525880079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &864330610
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4308722652029208670}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4debabdb76447104a8a1ef70b36580ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

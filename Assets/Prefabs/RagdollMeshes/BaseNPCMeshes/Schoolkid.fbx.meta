@@ -1,23 +1,11 @@
 fileFormatVersion: 2
-guid: baa26b145e25aad47a8575d9259a75c3
+guid: eccf9f77891309e4b9433eaa7e7d4a2a
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: 5449073193131188545
-    second: Armature|CubeAction
-  - first:
-      74: -7551964380084998518
-    second: Armature|Run
-  - first:
-      74: 7709918832269199868
-    second: Armature|Tackle
-  - first:
-      74: 6503710843971187167
-    second: Armature|Run (1)
-  - first:
-      74: 3033804239099367736
-    second: Armature|Tackle (1)
+      74: 8349542763059015795
+    second: Schoolkid 1 Walk
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -48,69 +36,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Run (1)
-      takeName: Armature|Run
+      name: Schoolkid 1 Walk
+      takeName: Armature|Walk
       internalID: 0
       firstFrame: 0
-      lastFrame: 13
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Run
-      takeName: Armature|Run
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 13
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Tackle
-      takeName: Armature|Tackle
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 13
+      lastFrame: 32
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
