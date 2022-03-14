@@ -11,6 +11,7 @@ public enum CharacterState
 
 public class PlayerControl : MonoBehaviour
 {
+    public Animator DashAnim;
     public float LaneDistance = 5.0f;
 
     private CharacterController controller;
@@ -45,18 +46,20 @@ public class PlayerControl : MonoBehaviour
         Vector3 moveVector = Vector3.zero;
         moveVector.x = (targetPosition.x - transform.position.x) * speed;
 
+
+        controller.Move(moveVector * Time.deltaTime);
         // Fixes glitch movment on z axis
         Vector3 tmpPosition = transform.localPosition;
         tmpPosition.z = 0;
         transform.localPosition = tmpPosition;
 
-        controller.Move(moveVector * Time.deltaTime);
+
 
         //switches state from run to lunge
-        if(Input.GetKeyDown(KeyCode.UpArrow) && state == CharacterState.Run) {
+        if(Input.GetKeyDown(KeyCode.UpArrow) && state == CharacterState.Run) 
+        {
             //Debug.Log("Lunge activated");
             StartCoroutine(DoLunge());
-        
         }
             
             
@@ -74,11 +77,17 @@ public class PlayerControl : MonoBehaviour
         //Debug.Log ("State Lunge ");
 
         //activate lunge animation here
-        yield return new WaitForSeconds(2);
+        DashAnim.SetTrigger("DashTR");
+        yield return new WaitForSeconds(1);
+        DashAnim.SetTrigger("RunTR");
         state = CharacterState.Run;
         //Debug.Log("State Run");
         yield return null;
 
         
+    }
+    void CheckState()
+    {
+
     }
 }
