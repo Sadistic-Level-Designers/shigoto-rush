@@ -21,6 +21,7 @@ public class playerCollision : MonoBehaviour
 
     private Rigidbody[] ragdollBodies;
     private Collider[] ragdollColliders;
+    public float ragdollForce = 500f; // expressed in m/s2
 
     void Start()
     {
@@ -53,13 +54,14 @@ public class playerCollision : MonoBehaviour
 
         CharacterState playerState = other.GetComponent<PlayerControl>().state;
 
+
         bool displayParticles = false;
         bool emotionalDamage = false;
 
         if(audioClip != null && audioClip.Length > 0)
             SoundManager.i.PlayOnce(audioClip[Random.Range(0, audioClip.Length)]);
 
-
+    
         //Decides what will happen depending on the object type
         switch (type)
         {
@@ -67,6 +69,9 @@ public class playerCollision : MonoBehaviour
                 if(playerState == CharacterState.Lunge) {
                     // TODO: increment attack score
                     ToggleRagdoll(true);
+                    foreach(Rigidbody rb in ragdollBodies) {
+                        rb.AddForce((new Vector3(transform.localPosition.x / 4f, 0.5f, 1f)) * ragdollForce / ragdollBodies.Length);
+                    }
 
                     // cool confetti
                     displayParticles = true;
@@ -90,8 +95,7 @@ public class playerCollision : MonoBehaviour
         }
 
         if(emotionalDamage) {
-            // damage to player
-            // decrease health etc
+            other.GetComponent<PlayerHealth>().PlayerTakeDamage();
         }
     }
 }
