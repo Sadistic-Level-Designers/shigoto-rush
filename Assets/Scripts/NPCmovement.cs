@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class NPCmovement : MonoBehaviour
 {
      public Vector3 pointA = new Vector3(0, 0, 0);
-     public Vector3 pointB = new Vector3(1, 0, 0);
+     public Vector3 pointB = new Vector3(0, 0, 0);
 
      public float starttime;
      public float walkduration = 1;
