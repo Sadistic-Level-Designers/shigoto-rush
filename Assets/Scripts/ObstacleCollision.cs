@@ -9,7 +9,7 @@ public enum ObjectType
     EmptySpace,
 }
 
-public class playerCollision : MonoBehaviour
+public class ObstacleCollision : MonoBehaviour
 {
 
     public ObjectType type;
@@ -17,16 +17,16 @@ public class playerCollision : MonoBehaviour
     public string[] audioClip;
 
     [Header("References")]
-    [SerializeField] private Animator animator = null;
+    [SerializeField] public Animator animator = null;
 
-    private Rigidbody[] ragdollBodies;
-    private Collider[] ragdollColliders;
+    public Rigidbody[] ragdollBodies;
+    public Collider[] ragdollColliders;
 
     void Start()
     {
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
-
+        animator = GetComponent<Animator>();
         ToggleRagdoll(false);
     }
     
@@ -41,7 +41,8 @@ public class playerCollision : MonoBehaviour
 
         foreach(Collider collider in ragdollColliders)
         {
-            collider.enabled = state;
+            if(collider.gameObject != this.gameObject)
+                collider.enabled = state;
         }
     }
   
