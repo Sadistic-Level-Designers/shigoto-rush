@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,9 @@ public class PrefabAreaLoader : MonoBehaviour
 
     public int areaIndex = -1;
 
+    private float startTime;
+    public string timer = "00:00.0";
+
     public AreaDescriptor[] areas = new AreaDescriptor[13];
 
     public static PrefabAreaLoader instance;
@@ -31,6 +35,8 @@ public class PrefabAreaLoader : MonoBehaviour
         LoadArea();
         LoadArea();
         LoadArea();
+
+        startTime = Time.time;
     }
 
     void Update()
@@ -39,6 +45,9 @@ public class PrefabAreaLoader : MonoBehaviour
         if(next != null && next.hasPlayer && areaIndex < areas.Length) {
             LoadArea();
         }
+
+        // Update timer
+        timer = (TimeSpan.FromSeconds(Time.time - startTime)).ToString(@"mm\:ss\.f");
     }
 
     void LoadArea() {

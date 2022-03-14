@@ -238,7 +238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -285,15 +285,15 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_RenderingLayerMask: 4294967295
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Version: 1
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
+  m_LightLayerMask: -1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
@@ -466,7 +466,9 @@ MonoBehaviour:
   - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
   - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
   - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
-  - {fileID: 3531498079407963980, guid: e3a3c326ea0a94b7f965aa6952c531cc, type: 3}
+  - {fileID: 3531498079407963980, guid: 84bc952e1da7a44398bb685bf4c8557f, type: 3}
+  - {fileID: 3531498079407963980, guid: 84bc952e1da7a44398bb685bf4c8557f, type: 3}
+  - {fileID: 3531498079407963980, guid: c7c1502f27c8d411cbb939d45e899414, type: 3}
 --- !u!4 &1102906998
 Transform:
   m_ObjectHideFlags: 0
@@ -517,36 +519,37 @@ MonoBehaviour:
   curr: {fileID: 0}
   next: {fileID: 0}
   areaIndex: -1
+  timer: 00:00.0
   areas:
   - tag: street
     duration: 0
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: street
+    duration: 25.5
+    playerSpeed: 0
+    obj: {fileID: 0}
+  - tag: alleyway
+    duration: 24.5
+    playerSpeed: 0
+    obj: {fileID: 0}
+  - tag: street
+    duration: 12.4
+    playerSpeed: 0
+    obj: {fileID: 0}
+  - tag: street
+    duration: 12.4
+    playerSpeed: 0
+    obj: {fileID: 0}
+  - tag: alleyway
     duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: street
-    duration: 24
+    duration: 31
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: street
-    duration: 12
-    playerSpeed: 0
-    obj: {fileID: 0}
-  - tag: street
-    duration: 12
-    playerSpeed: 0
-    obj: {fileID: 0}
-  - tag: street
-    duration: 25
-    playerSpeed: 0
-    obj: {fileID: 0}
-  - tag: street
-    duration: 30
-    playerSpeed: 0
-    obj: {fileID: 0}
-  - tag: street
+  - tag: alleyway
     duration: 26
     playerSpeed: 0
     obj: {fileID: 0}
@@ -566,7 +569,7 @@ MonoBehaviour:
     duration: 12
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: test
+  - tag: end
     duration: 0
     playerSpeed: 0
     obj: {fileID: 0}
@@ -616,7 +619,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 18f08f36e89f14a27ae5c5af60538ace, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -998,10 +1001,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156252235}
     m_Modifications:
-    - target: {fileID: 417526480, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_Name
       value: PlayerContainer
