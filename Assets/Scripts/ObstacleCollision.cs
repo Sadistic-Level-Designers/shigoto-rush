@@ -9,7 +9,7 @@ public enum ObjectType
     EmptySpace,
 }
 
-public class playerCollision : MonoBehaviour
+public class ObstacleCollision : MonoBehaviour
 {
 
     public ObjectType type;
@@ -59,6 +59,7 @@ public class playerCollision : MonoBehaviour
         bool displayParticles = false;
         bool emotionalDamage = false;
         bool dodgedObstacle = false;
+        bool lungedHuman = false;
 
         if(audioClip != null && audioClip.Length > 0)
             SoundManager.i.PlayOnce(audioClip[Random.Range(0, audioClip.Length)]);

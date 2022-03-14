@@ -247,11 +247,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
+  PlayerContainer: {fileID: 0}
   audioClip:
   - Man_Uuh!
   - Man_Help!
   - Man_Stop!
   animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
   ragdollForce: 0
 --- !u!65 &201470280
 BoxCollider:
@@ -459,6 +462,81 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24c764136b63d4beb957dd0e1b5ae78f, type: 3}
+--- !u!1 &657111448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 657111452}
+  - component: {fileID: 657111451}
+  - component: {fileID: 657111450}
+  - component: {fileID: 657111449}
+  m_Layer: 0
+  m_Name: ScoreTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &657111449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657111448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9b93f6d8ba54a26a9f3e8042c73cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
+  PlayerContainer: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+  audioClip: []
+  animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
+  ragdollForce: 500
+--- !u!65 &657111450
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657111448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &657111451
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657111448}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &657111452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657111448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 8.376973, z: 18.5}
+  m_LocalScale: {x: 4, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &701073111
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,11 +571,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
+  PlayerContainer: {fileID: 0}
   audioClip:
   - Child_Uuh!
   - Child_Aah!
   - Child_Crazy!
   animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
   ragdollForce: 0
 --- !u!65 &701073113
 BoxCollider:
@@ -726,11 +807,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 3395183694845571460, guid: 35c7fb1ef957740fcb2c19ef66a0c445, type: 3}
+  PlayerContainer: {fileID: 0}
   audioClip:
   - OldWoman_Uuh!
   - OldWoman_Stop!
   - OldWoman_Madman!
   animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
   ragdollForce: 0
 --- !u!65 &965007521
 BoxCollider:
@@ -881,6 +965,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1121595479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+  m_PrefabInstance: {fileID: 4849337342034747071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1156252233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1509,6 +1598,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7999206570070582808, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
   m_PrefabInstance: {fileID: 4849337342034747071}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4849337342034747074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121595479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aa378c98b844454da21d6706765cd27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dodgeScore: 0
+  lungeScore: 0
+  scoreAmount: 1
 --- !u!1001 &7768676232002003474
 PrefabInstance:
   m_ObjectHideFlags: 0
