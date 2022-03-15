@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-
     public float maxHealth;
     public float currentHealth;
     public float damage;
@@ -36,7 +36,12 @@ public class PlayerHealth : MonoBehaviour
 
         // set screen effect
         if(screenVolume)
-            screenVolume.weight = 1f - currentHealth;
+            screenVolume.weight = Mathf.Pow(1f - currentHealth, 2);
+
+        if(currentHealth <= 0)
+        {  
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     public void PlayerTakeDamage()
