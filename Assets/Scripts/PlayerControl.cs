@@ -56,7 +56,8 @@ public class PlayerControl : MonoBehaviour
         moveVector.x = (targetPosition.x - transform.position.x) * speed;
 
 
-        controller.SimpleMove(moveVector);
+        controller.Move(moveVector * Time.deltaTime);
+        controller.Move(transform.up * -5f * Time.deltaTime);
         // Fixes glitch movment on z axis
         Vector3 tmpPosition = transform.localPosition;
         tmpPosition.z = 0;
