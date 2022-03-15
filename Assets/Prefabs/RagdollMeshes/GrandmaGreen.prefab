@@ -366,6 +366,72 @@ Transform:
   m_Father: {fileID: 8903955562501142996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2027502090095202605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8585084169563746604}
+  - component: {fileID: 4293848734470692549}
+  - component: {fileID: 8984502940600241556}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8585084169563746604
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027502090095202605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.4285715, z: -9.584302}
+  m_LocalScale: {x: 1.4285717, y: 1.4285715, z: 1.4285717}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3513241412604546909}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4293848734470692549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027502090095202605}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000005, y: 1, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8984502940600241556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027502090095202605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9b93f6d8ba54a26a9f3e8042c73cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  particleEffect: {fileID: 3409166518477290958, guid: cfdf4f5ca9e6340268ecfe478822186e, type: 3}
+  playerContainer: {fileID: 0}
+  audioClip: []
+  animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
+  ragdollForce: 0
 --- !u!1 &2370427017582024521
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +637,72 @@ Transform:
   m_Father: {fileID: 6227289980683229982}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3779756010908301239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2272932986274656775}
+  - component: {fileID: 4244791455805961267}
+  - component: {fileID: 1370577701446547013}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2272932986274656775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779756010908301239}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.4285715, z: 10.415707}
+  m_LocalScale: {x: 1.4285717, y: 1.4285715, z: 1.4285717}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3513241412604546909}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4244791455805961267
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779756010908301239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000005, y: 1, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1370577701446547013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3779756010908301239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9b93f6d8ba54a26a9f3e8042c73cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 2
+  particleEffect: {fileID: 3409166518477290958, guid: cfdf4f5ca9e6340268ecfe478822186e, type: 3}
+  playerContainer: {fileID: 0}
+  audioClip: []
+  animator: {fileID: 0}
+  ragdollBodies: []
+  ragdollColliders: []
+  ragdollForce: 0
 --- !u!1 &3980905660356077353
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,6 +865,8 @@ Transform:
   m_Children:
   - {fileID: 5508288417254318019}
   - {fileID: 8630606179186363339}
+  - {fileID: 8585084169563746604}
+  - {fileID: 2272932986274656775}
   m_Father: {fileID: 5313182025561652790}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -763,7 +897,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 5632487390996115436, guid: 0fc590827fbff493aad31d4406199478, type: 3}
-  PlayerContainer: {fileID: 0}
+  playerContainer: {fileID: 0}
   audioClip:
   - OldWoman_Uuh!
   - OldWoman_Stop!
@@ -804,10 +938,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9179922de394f7947b531ddcec896a1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {x: 0, y: 0, z: 0}
-  pointB: {x: 0, y: 0, z: 5}
-  starttime: 0
-  walkduration: 10
+  pointA: {x: 0, y: 0, z: -6}
+  pointB: {x: 0, y: 0, z: 6}
+  speed: 0.25
 --- !u!1 &4439132503600554973
 GameObject:
   m_ObjectHideFlags: 0
