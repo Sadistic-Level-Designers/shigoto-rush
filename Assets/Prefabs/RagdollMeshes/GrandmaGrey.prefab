@@ -1896,10 +1896,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 5632487390996115436, guid: 0fc590827fbff493aad31d4406199478, type: 3}
-  audioClip: []
+  PlayerContainer: {fileID: 0}
+  audioClip:
+  - OldWoman_Uuh!
+  - OldWoman_Stop!
+  - OldWoman_Madman!
   animator: {fileID: 6123270823535989507}
   ragdollBodies: []
   ragdollColliders: []
+  ragdollForce: 500
 --- !u!95 &6123270823535989507
 Animator:
   serializedVersion: 4

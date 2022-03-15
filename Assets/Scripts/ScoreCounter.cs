@@ -25,6 +25,7 @@ public class ScoreCounter : MonoBehaviour
     public void ChangeDodgeScore()
     {
         dodgeScore = dodgeScore + scoreAmount;
+        Debug.Log("SCORE!");
     }
 
     public void ChangeLungeScore()

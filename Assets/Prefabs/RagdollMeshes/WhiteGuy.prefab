@@ -1350,10 +1350,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 5632487390996115436, guid: 0fc590827fbff493aad31d4406199478, type: 3}
-  audioClip: []
+  PlayerContainer: {fileID: 0}
+  audioClip:
+  - Man_Uuh!
+  - Man_Help!
+  - Man_Stop!
   animator: {fileID: 4705061440892595571}
   ragdollBodies: []
   ragdollColliders: []
+  ragdollForce: 500
 --- !u!95 &4705061440892595571
 Animator:
   serializedVersion: 4
