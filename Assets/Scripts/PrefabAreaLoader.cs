@@ -96,6 +96,7 @@ public class PrefabAreaLoader : MonoBehaviour
             player.speed = 0;
             this.enabled = false;
             Debug.Log("Level terminated");
+            player.GetComponent<WinState>().Animate();
         }
     }
 }
