@@ -1413,10 +1413,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   particleEffect: {fileID: 5632487390996115436, guid: 0fc590827fbff493aad31d4406199478, type: 3}
-  audioClip: []
+  PlayerContainer: {fileID: 0}
+  audioClip:
+  - Woman_Aah!
+  - Woman_Stop!
+  - Woman_Madman!
   animator: {fileID: 4951236369386744019}
   ragdollBodies: []
   ragdollColliders: []
+  ragdollForce: 500
 --- !u!95 &4951236369386744019
 Animator:
   serializedVersion: 4

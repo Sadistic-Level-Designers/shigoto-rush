@@ -14,6 +14,7 @@ public class ObstacleCollision : MonoBehaviour
 
     public ObjectType type;
     public GameObject particleEffect;
+    public GameObject PlayerContainer;
     public string[] audioClip;
 
     [Header("References")]
@@ -21,6 +22,7 @@ public class ObstacleCollision : MonoBehaviour
 
     public Rigidbody[] ragdollBodies;
     public Collider[] ragdollColliders;
+    public float ragdollForce = 500f; // expressed in m/s2
 
     void Start()
     {
@@ -54,8 +56,11 @@ public class ObstacleCollision : MonoBehaviour
 
         CharacterState playerState = other.GetComponent<PlayerControl>().state;
 
+
         bool displayParticles = false;
         bool emotionalDamage = false;
+        bool dodgedObstacle = false;
+        bool lungedHuman = false;
 
         if(audioClip != null && audioClip.Length > 0)
             SoundManager.i.PlayOnce(audioClip[Random.Range(0, audioClip.Length)]);
@@ -66,8 +71,12 @@ public class ObstacleCollision : MonoBehaviour
         {
             case ObjectType.Human:
                 if(playerState == CharacterState.Lunge) {
-                    // TODO: increment attack score
+                    lungedHuman = true;
+
                     ToggleRagdoll(true);
+                    foreach(Rigidbody rb in ragdollBodies) {
+                        rb.AddForce((new Vector3(transform.localPosition.x / 4f, 0.5f, 1f)) * ragdollForce / ragdollBodies.Length);
+                    }
 
                     // cool confetti
                     displayParticles = true;
@@ -82,7 +91,8 @@ public class ObstacleCollision : MonoBehaviour
 
             case ObjectType.EmptySpace:
                 displayParticles = true;
-                // TODO: increment dodge score
+                dodgedObstacle = true;
+                Debug.Log("DODGED");
                 break;
         }
 
@@ -91,8 +101,16 @@ public class ObstacleCollision : MonoBehaviour
         }
 
         if(emotionalDamage) {
-            // damage to player
-            // decrease health etc
+            other.GetComponent<PlayerHealth>().PlayerTakeDamage();
+        }
+
+        if(dodgedObstacle) {
+            PlayerContainer.GetComponent<ScoreCounter>().ChangeDodgeScore();
+            Debug.Log("Gottem");
+        }
+
+        if(lungedHuman){
+            PlayerContainer.GetComponent<ScoreCounter>().ChangeLungeScore();
         }
     }
 }
