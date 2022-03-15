@@ -17,7 +17,11 @@ public class PlayerControl : MonoBehaviour
     private CharacterController controller;
     public float speed = 8.0f;
     public int chosenLane = 1; //0 = left, 1 = middle, 2 = right
-   
+    //public float rotspeed = 45;
+    //Vector3 currentEulerAngles;
+    //float x;
+    //float y;
+    //float z;
 
     public CharacterState state;
 
@@ -37,6 +41,8 @@ public class PlayerControl : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.RightArrow))
             MoveLane(true);
 
+
+
         Vector3 targetPosition = Vector3.zero;
         if (chosenLane == 0)
             targetPosition += Vector3.left * LaneDistance;
@@ -47,21 +53,30 @@ public class PlayerControl : MonoBehaviour
         moveVector.x = (targetPosition.x - transform.position.x) * speed;
 
 
-        controller.Move(moveVector * Time.deltaTime);
+        controller.SimpleMove(moveVector);
         // Fixes glitch movment on z axis
         Vector3 tmpPosition = transform.localPosition;
         tmpPosition.z = 0;
         transform.localPosition = tmpPosition;
 
-
-
+        // Makes player dash when going left
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && state == CharacterState.Run)
+        {
+            //StartCoroutine(DoLunge());
+        }
+        // Makes player dash when going right
+        if(Input.GetKeyDown(KeyCode.RightArrow) && state == CharacterState.Run)
+        {
+            //StartCoroutine(DoLunge());
+        }
         //switches state from run to lunge
         if(Input.GetKeyDown(KeyCode.UpArrow) && state == CharacterState.Run) 
         {
             //Debug.Log("Lunge activated");
             StartCoroutine(DoLunge());
         }
-            
+   
+
             
     }
 
@@ -86,8 +101,6 @@ public class PlayerControl : MonoBehaviour
 
         
     }
-    void CheckState()
-    {
 
-    }
+
 }
