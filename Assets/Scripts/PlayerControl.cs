@@ -32,6 +32,9 @@ public class PlayerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
+        
         if(Input.GetKeyDown(KeyCode.LeftArrow))
             MoveLane(false);
         if(Input.GetKeyDown(KeyCode.RightArrow))
@@ -47,7 +50,7 @@ public class PlayerControl : MonoBehaviour
         moveVector.x = (targetPosition.x - transform.position.x) * speed;
 
 
-        controller.Move(moveVector * Time.deltaTime);
+        controller.SimpleMove(moveVector);
         // Fixes glitch movment on z axis
         Vector3 tmpPosition = transform.localPosition;
         tmpPosition.z = 0;

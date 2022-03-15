@@ -769,9 +769,31 @@ MonoBehaviour:
   - OldWoman_Stop!
   - OldWoman_Madman!
   animator: {fileID: 3513241412604546883}
-  ragdollBodies: []
-  ragdollColliders: []
-  ragdollForce: 500
+  ragdollBodies:
+  - {fileID: 3980905660356077352}
+  - {fileID: 553930280186645870}
+  - {fileID: 7915356270622521605}
+  - {fileID: 2366226222209121625}
+  - {fileID: 8261897401440177561}
+  - {fileID: 3508274016451527119}
+  - {fileID: 8903955562501143002}
+  - {fileID: 1242825980145117362}
+  - {fileID: 1710146385521919501}
+  - {fileID: 4906021225142254068}
+  - {fileID: 3518881668961484918}
+  ragdollColliders:
+  - {fileID: 553930280186645868}
+  - {fileID: 7915356270622521611}
+  - {fileID: 2366226222209121631}
+  - {fileID: 8261897401440177560}
+  - {fileID: 3508274016451527118}
+  - {fileID: 8903955562501143001}
+  - {fileID: 1242825980145117361}
+  - {fileID: 1710146385521919500}
+  - {fileID: 3980905660356077359}
+  - {fileID: 4906021225142254074}
+  - {fileID: 3518881668961484916}
+  ragdollForce: 9000
 --- !u!95 &3513241412604546883
 Animator:
   serializedVersion: 4
