@@ -526,6 +526,8 @@ MonoBehaviour:
   - {fileID: 3531498079407963980, guid: 84bc952e1da7a44398bb685bf4c8557f, type: 3}
   - {fileID: 3531498079407963980, guid: 84bc952e1da7a44398bb685bf4c8557f, type: 3}
   - {fileID: 3531498079407963980, guid: c7c1502f27c8d411cbb939d45e899414, type: 3}
+  - {fileID: 3531498079407963980, guid: 20e9fa37432ef421b88623919abd7c11, type: 3}
+  - {fileID: 3531498079407963980, guid: 20e9fa37432ef421b88623919abd7c11, type: 3}
 --- !u!4 &1102906998
 Transform:
   m_ObjectHideFlags: 0
@@ -578,11 +580,11 @@ MonoBehaviour:
   areaIndex: -1
   timer: 00:00.0
   areas:
-  - tag: street
+  - tag: nightstreet
     duration: 0
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: street
+  - tag: nightstreet
     duration: 25.5
     playerSpeed: 0
     obj: {fileID: 0}
@@ -594,7 +596,7 @@ MonoBehaviour:
     duration: 12.4
     playerSpeed: 0
     obj: {fileID: 0}
-  - tag: street
+  - tag: nightstreet
     duration: 12.4
     playerSpeed: 0
     obj: {fileID: 0}
@@ -603,7 +605,7 @@ MonoBehaviour:
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: street
-    duration: 31
+    duration: 32
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: alleyway
@@ -615,15 +617,15 @@ MonoBehaviour:
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: test
-    duration: 12
+    duration: 14.5
+    playerSpeed: 0
+    obj: {fileID: 0}
+  - tag: nightstreet
+    duration: 25
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: test
-    duration: 24
-    playerSpeed: 0
-    obj: {fileID: 0}
-  - tag: test
-    duration: 12
+    duration: 12.4
     playerSpeed: 0
     obj: {fileID: 0}
   - tag: end
@@ -760,6 +762,73 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1341966740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341966743}
+  - component: {fileID: 1341966742}
+  - component: {fileID: 1341966741}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1341966741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341966740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1341966742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341966740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1341966743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341966740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1395516430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1127,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1156252235}
     m_Modifications:
+    - target: {fileID: 879316978604985189, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 4849337342034747073}
+    - target: {fileID: 879316978604985189, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+      propertyPath: cameraTilt
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 2980220718335974679, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
       propertyPath: m_Name
       value: PlayerContainer
@@ -1111,5 +1188,10 @@ PrefabInstance:
 --- !u!4 &4849337342034747072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7999206570070582808, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
+  m_PrefabInstance: {fileID: 4849337342034747071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &4849337342034747073 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8897491245685912140, guid: 6a8f21d2df5574576ba6ff0c541069a8, type: 3}
   m_PrefabInstance: {fileID: 4849337342034747071}
   m_PrefabAsset: {fileID: 0}
