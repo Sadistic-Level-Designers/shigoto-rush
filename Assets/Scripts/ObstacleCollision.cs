@@ -14,7 +14,7 @@ public class ObstacleCollision : MonoBehaviour
 
     public ObjectType type;
     public GameObject particleEffect;
-    public GameObject PlayerContainer;
+    public GameObject playerContainer;
     public string[] audioClip;
 
     [Header("References")]
@@ -26,15 +26,17 @@ public class ObstacleCollision : MonoBehaviour
 
     void Start()
     {
+        playerContainer = GameObject.Find("PlayerContainer");
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         ragdollColliders = GetComponentsInChildren<Collider>();
-        animator = GetComponent<Animator>();
+        TryGetComponent<Animator>(out animator);
         ToggleRagdoll(false);
     }
     
     void ToggleRagdoll(bool state)
     {
-        animator.enabled = !state;
+        if(animator != null)
+            animator.enabled = !state;
 
         foreach(Rigidbody rb in ragdollBodies)
         {
@@ -43,7 +45,7 @@ public class ObstacleCollision : MonoBehaviour
 
         foreach(Collider collider in ragdollColliders)
         {
-            if(collider.gameObject != this.gameObject)
+            if(collider.gameObject != this.gameObject && !collider.gameObject.name.Contains("Cube"))
                 collider.enabled = state;
         }
     }
@@ -54,7 +56,8 @@ public class ObstacleCollision : MonoBehaviour
         if(other.gameObject.name != "Player") return;
         Debug.Log("Poof!");
 
-        CharacterState playerState = other.GetComponent<PlayerControl>().state;
+        PlayerControl player = other.GetComponent<PlayerControl>();
+        CharacterState playerState = player.state;
 
 
         bool displayParticles = false;
@@ -97,7 +100,7 @@ public class ObstacleCollision : MonoBehaviour
         }
 
         if(displayParticles) {
-            GameObject.Instantiate(particleEffect, transform.position, Quaternion.identity);
+            GameObject.Instantiate(particleEffect, player.transform.position, Quaternion.identity);
         }
 
         if(emotionalDamage) {
@@ -105,12 +108,12 @@ public class ObstacleCollision : MonoBehaviour
         }
 
         if(dodgedObstacle) {
-            PlayerContainer.GetComponent<ScoreCounter>().ChangeDodgeScore();
+            playerContainer.GetComponent<ScoreCounter>().ChangeDodgeScore();
             Debug.Log("Gottem");
         }
 
         if(lungedHuman){
-            PlayerContainer.GetComponent<ScoreCounter>().ChangeLungeScore();
+            playerContainer.GetComponent<ScoreCounter>().ChangeLungeScore();
         }
     }
 }
