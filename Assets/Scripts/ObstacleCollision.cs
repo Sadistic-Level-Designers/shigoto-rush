@@ -92,6 +92,7 @@ public class ObstacleCollision : MonoBehaviour
             case ObjectType.EmptySpace:
                 displayParticles = true;
                 dodgedObstacle = true;
+                Debug.Log("DODGED");
                 break;
         }
 
@@ -105,6 +106,7 @@ public class ObstacleCollision : MonoBehaviour
 
         if(dodgedObstacle) {
             PlayerContainer.GetComponent<ScoreCounter>().ChangeDodgeScore();
+            Debug.Log("Gottem");
         }
 
         if(lungedHuman){
